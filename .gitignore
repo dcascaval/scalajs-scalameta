@@ -1,0 +1,22 @@
+# IDE Outputs
+.bsp/
+.bloop/
+.metals/
+.vscode/
+
+# Output code
+target/
+
+# SBT and Metals crash files
+*.log
+
+# Extra SBT emits
+project/project/
+project/metals.sbt
+
+# Javascript
+node_modules/
+yarn.lock
+
+# MacOS
+.DS_Store

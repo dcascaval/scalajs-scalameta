@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Scalameta</title>
+  <style>
+    body {
+      font-family: monospace;
+    }
+  </style>
+  <script type="text/javascript" src="dist/live.js"></script>
+  <script type="text/javascript" src="./target/scala-3.0.2/example-fastopt.js"></script>
+</head>
+
+<body>
+  <textarea id="exprSource" style="width: 500px; height: 300px;">
+def k(a: T, b: T) = a + b
+  </textarea>
+  <textarea id="programSource" style="width: 500px; height: 300px;">
+trait Functor[A] {
+  def map[B](a: A, f: A => B): B
+}
+trait Monad[F[_]] {
+  def flatMap[A, G: Functor](a: F[A], f: A => G[A]): G[A]
+}
+object Main {
+  def run() = {
+    val x = 2
+    println(x + y)
+  }
+}
+  </textarea>
+</body>
+
+</html>
